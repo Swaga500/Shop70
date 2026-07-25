@@ -39,9 +39,8 @@
         .product-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
         .product-title { font-size: 18px; margin-bottom: 8px; }
         .product-price { font-size: 16px; font-weight: bold; color: #ff3f6c; margin-bottom: 15px; }
-                /* Базовый стиль стеклянной кнопки а-ля iOS */
+                       /* Базовый стиль прозрачной кнопки а-ля iOS */
         .btn-add { 
-            color: #ffffff !important; 
             border: 1px solid rgba(255, 255, 255, 0.4) !important; 
             padding: 12px; 
             width: 100%; 
@@ -51,24 +50,36 @@
             font-size: 14px;
             letter-spacing: 0.5px;
             transition: all 0.3s ease; 
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             backdrop-filter: blur(10px); 
             -webkit-backdrop-filter: blur(10px); 
-            background: rgba(255, 255, 255, 0.15) !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; /* Отступ для иконок */
         }
-
-        .btn-tg { margin-bottom: 10px; }
+        
+        /* Прозрачный Telegram с синим текстом */
+        .btn-tg { 
+            background: rgba(36, 129, 204, 0.08) !important; 
+            color: #2481cc !important;
+            margin-bottom: 10px; 
+        }
         .btn-tg:hover { 
-            background: rgba(36, 129, 204, 0.4) !important; 
-            border-color: rgba(36, 129, 204, 0.7) !important;
+            background: rgba(36, 129, 204, 0.18) !important; 
             transform: translateY(-2px); 
         }
-
+        
+        /* Прозрачный ВК с синим текстом */
+        .btn-vk { 
+            background: rgba(0, 119, 255, 0.08) !important; 
+            color: #0077ff !important;
+        }
         .btn-vk:hover { 
-            background: rgba(0, 119, 255, 0.4) !important; 
-            border-color: rgba(0, 119, 255, 0.7) !important;
+            background: rgba(0, 119, 255, 0.18) !important; 
             transform: translateY(-2px);
         }
+
 
             /* Стили для слайдера картинок */
         .slider-wrapper { position: relative; width: 100%; height: 350px; overflow: hidden; }
@@ -115,8 +126,15 @@
               <div class="product-info">  
 <h3 class="product-title">Повседневный Bomber jacket</h3>
                 <p class="product-price">3700 ₽</p>
-                <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">Написать в Telegram</button>
-<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">Написать во ВКонтакте</button>
+                <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">
+    <img src="https://icons8.com" alt="tg" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать в Telegram
+</button>
+<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">
+    <img src="https://icons8.com" alt="vk" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать во ВКонтакте
+</button>
+
 
 
             </div>
@@ -128,8 +146,15 @@
             <div class="product-info">
                 <h3 class="product-title">Футболка Streetwear</h3>
                 <p class="product-price">1100 ₽</p>
-                 <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">Написать в Telegram</button>
-<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">Написать во ВКонтакте</button>
+                 <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">
+    <img src="https://icons8.com" alt="tg" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать в Telegram
+</button>
+<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">
+    <img src="https://icons8.com" alt="vk" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать во ВКонтакте
+</button>
+
 
 
             </div>
@@ -141,8 +166,15 @@
             <div class="product-info">
                 <h3 class="product-title">Широкие брюки карго</h3>
                 <p class="product-price">2100 ₽</p>
-                 <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">Написать в Telegram</button>
-<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">Написать во ВКонтакте</button>
+                 <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">
+    <img src="https://icons8.com" alt="tg" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать в Telegram
+</button>
+<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">
+    <img src="https://icons8.com" alt="vk" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать во ВКонтакте
+</button>
+
 
 
             </div>
@@ -154,8 +186,15 @@
             <div class="product-info">
                 <h3 class="product-title">Браслет на руку с бабочкой</h3>
                 <p class="product-price">150 ₽</p>
-                <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">Написать в Telegram</button>
-<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">Написать во ВКонтакте</button>
+                <button class="btn-add btn-tg" onclick="window.open('https://t.me/Mzlffoff', '_blank')">
+    <img src="https://icons8.com" alt="tg" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать в Telegram
+</button>
+<button class="btn-add btn-vk" onclick="window.open('https://vk.com/swagin_777', '_blank')">
+    <img src="https://icons8.com" alt="vk" style="width:18px; height:18px; object-fit:contain; margin:0;"> 
+    Написать во ВКонтакте
+</button>
+
 
             </div>
         </div>
